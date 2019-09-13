@@ -752,6 +752,7 @@ foreach(__CLDNN_CompilerFlagName IN ITEMS "CMAKE_CXX_FLAGS" "CMAKE_C_FLAGS")
       "${__CLDNN_CompilerFlagName}"
       ALL_PATTERN ""
       SET
+        TreatWarnAsErrorDisabled
         CompileAsDefault
         ExceptionsEnabled
         MultiProcessorCompilation

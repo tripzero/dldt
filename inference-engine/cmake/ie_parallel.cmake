@@ -78,6 +78,7 @@ function(set_ie_threading_interface_for TARGET_NAME)
         endif ()
 
         if (NOT OMP_LIBRARIES_RELEASE)
+            ext_message(STATUS "can has ${omp_lib_name}")
             find_library(OMP_LIBRARIES_RELEASE ${omp_lib_name})
             find_library(OMP_LIBRARIES_DEBUG ${omp_lib_name})
             ext_message(STATUS "OMP Release lib: ${OMP_LIBRARIES_RELEASE}")
